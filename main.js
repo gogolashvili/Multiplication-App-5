@@ -12,7 +12,7 @@ question.innerHTML = "what  is   " + n1 + "   multiply  by   " + n2 + " ?";
 
 button.disabled = false;
 let scores = JSON.parse(localStorage.getItem("scores")) || 0;
-score.innerHTML = "score:" + scores;
+score.innerHTML = "score:" + " " + scores;
 button.addEventListener("click", function () {
   location.reload();
   console.log(input.value);
