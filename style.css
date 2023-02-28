@@ -38,9 +38,9 @@ input::placeholder {
   line-height: 38px;
 }
 button {
-  margin-top: 20px;
-  margin-left: 45px;
-  width: 400px;
+  margin-top: 30px;
+  margin-left: 150px;
+  width: 200px;
   height: 50px;
   border-radius: 15px;
   border: none;
@@ -48,6 +48,11 @@ button {
   color: white;
   font-size: 18px;
   font-family: "Tilt Warp", cursive;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 40px rgb(44, 32, 32);
+  background-color: rgb(37, 36, 36);
 }
 h1 {
   margin-left: 370px;
