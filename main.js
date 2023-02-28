@@ -4,13 +4,13 @@ let question = document.querySelector("h2");
 let input = document.querySelector("input");
 let button = document.querySelector("button");
 
-let n1 = 0;
-let n2 = 0;
+let x = 0;
+let y = 0;
 
-n1 = Math.floor(Math.random() * 5);
-n2 = Math.floor(Math.random() * 5);
+x = Math.floor(Math.random() * 5);
+y = Math.floor(Math.random() * 5);
 
-question.innerHTML = "what  is   " + n1 + "   multiply  by   " + n2 + " ?";
+question.innerHTML = "what  is   " + x + "   multiply  by   " + y + " ?";
 
 button.disabled = false;
 
@@ -22,9 +22,9 @@ button.addEventListener("click", function () {
 
   if (input.value == "") {
     button.disabled = true;
-  } else if (input.value == n1 * n2) {
+  } else if (input.value == x * y) {
     scores++;
-  } else if (input.value !== n1 * n2) {
+  } else if (input.value !== x * y) {
     scores--;
   }
 
