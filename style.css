@@ -29,6 +29,7 @@ input {
   border-radius: 10px;
   font-size: 27px;
   border: none;
+  text-align: center;
 }
 input::placeholder {
   opacity: 0.3;
