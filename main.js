@@ -3,6 +3,7 @@ let score = document.querySelector("h1");
 let question = document.querySelector("h2");
 let input = document.querySelector("input");
 let button = document.querySelector("button");
+let newgame = document.querySelector("h3");
 
 let x = 0;
 let y = 0;
@@ -15,7 +16,7 @@ question.innerHTML = "what  is   " + x + "   multiply  by   " + y + " ?";
 button.disabled = false;
 
 let scores = JSON.parse(localStorage.getItem("scores")) || 0;
-score.innerHTML = "score:" + " " + scores;
+score.innerHTML = "SCORE:" + " " + scores;
 
 button.addEventListener("click", function () {
   location.reload();
@@ -30,4 +31,10 @@ button.addEventListener("click", function () {
 
   localStorage.setItem("scores", JSON.stringify(scores));
   input.value = "";
+});
+
+newgame.addEventListener("click", function () {
+  localStorage.clear();
+  scores = "";
+  score.textContent = scores;
 });
